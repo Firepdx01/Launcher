@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Launcher Simulator</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Load voxel-engine from a CDN (if available) -->
+  <script src="https://unpkg.com/voxel-engine@latest/voxel-engine.js"></script>
+</head>
+<body>
+  <div class="launcher">
+    <h1>Multi-Launcher Simulator</h1>
+    <div class="game-options">
+      <button id="playMinecraftBtn">Play Minecraft</button>
+      <button id="playEaglercraftBtn">Play Eaglercraft</button>
+      <button id="playVoxelBtn">Play Voxel Demo</button>
+    </div>
+    <div id="status">Idle</div>
+  </div>
+  
+  <!-- Game area where our simulation or engine output will appear -->
+  <div id="gameArea" style="display:none;"></div>
+  
+  <script src="launcher.js"></script>
+</body>
+</html>
